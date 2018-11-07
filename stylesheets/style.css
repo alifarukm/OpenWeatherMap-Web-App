@@ -1,0 +1,109 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+div {
+    padding: 2em;
+    margin: 0 auto;
+    width: 90%;
+}
+  
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0 auto;
+}
+
+input[type="search"] {
+    border: none;
+    whitespace: wrap;
+    border-radius: 5px 5px 5px 5px;
+        background: #E9E9E9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0.35em 0.75em;
+        border: none;
+        font-size: 1.1em;
+        text-decoration: none;
+        line-height: normal;
+        max-height: 3em;
+        flex: 2 0 250px;
+}
+
+input[type="search"]:focus {
+    background: Thistle;
+    color: white;
+    letter-spacing: .1em;
+    transition: background 400ms ease-in-out;
+    outline: none;
+}
+
+button {
+    flex: 1 0 90px;
+    max-height: 3em;
+    font-size: 1.1em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    border-radius: 0px 5px 5px 0px;
+    background: silver;
+    color: white;
+    border: none;
+    padding: 0.35em 0.75em;
+    cursor: pointer;
+
+}
+button:hover {
+    background: skyblue;
+}
+
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+  }
+  
+  .child {
+    flex: 0 0 21%;
+    margin: 0px 20px 20px 50px;
+    height: 300px;
+    border: 1px solid Thistle;
+    border-radius: 10px;
+    background: silver;
+  }
+img {
+    float:right;
+    width: 10%;
+    margin-top: -25px;
+    margin-right: -25px;
+    transition: transform .2s;
+}
+img:hover {
+    transform: scale(1.3);
+}
+.content {
+    float: left;
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+}
+
+i {
+    position: relative;
+    left: 130%;
+    bottom: 20px;
+    font-size: 80px;
+}
+
+@media (max-width: 450px) {
+    body {
+        width: 100%;
+    
+    }
+
+    html, body {
+            margin: 0;
+            padding: 0;
+        }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Open WeatherApi Solution</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/error.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
+</head>
+<body>
+    <div>
+        <form>
+          <input type="search" name="search" id="get-city" />
+          <button type="submit" id="btn-search">Search</button> 
+        </form>
+
+        <div class="parent">
+        </div>
+    </div>
+
+    <!-- Error Popup Area -->
+    <div class="container">
+        <div class="popup">
+            <p>Wrong City Please Try Again !</p>
+            <div class="options">
+                <a href="#">Search Again</a>
+            </div>
+        </div>
+    </div>
+    <div class="cover"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
